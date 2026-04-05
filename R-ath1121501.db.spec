@@ -1,14 +1,15 @@
 %define		packname	ath1121501.db
 
+%undefine	_debugsource_packages
 Summary:	Affymetrix Arabidopsis ATH1 Genome Array annotation data (chip ath1121501)
 Name:		R-%{packname}
-Version:	2.10.1
-Release:	2
+Version:	3.13.0
+Release:	1
 License:	Artistic 2.0
 Group:		Applications/Engineering
-Source0:	http://www.bioconductor.org/packages/release/data/annotation/src/contrib/%{packname}_%{version}.tar.gz
-# Source0-md5:	f43914f47b734878f6b5b97df065c433
-URL:		http://www.bioconductor.org/packages/release/data/annotation/html/ath1121501.db.html
+Source0:	https://bioconductor.org/packages/release/data/annotation/src/contrib/%{packname}_%{version}.tar.gz
+# Source0-md5:	c5d937ca9c6bcbb4385fb37a3b14ad15
+URL:		https://bioconductor.org/packages/release/data/annotation/html/ath1121501.db.html
 BuildRequires:	R-AnnotationDbi
 BuildRequires:	R-org.At.tair.db >= 2.10.0
 BuildRequires:	R
